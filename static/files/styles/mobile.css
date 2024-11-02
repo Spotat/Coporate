@@ -1,0 +1,231 @@
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+    .logo {
+        font-size: 1rem;
+    }
+    .navigation {
+        position: absolute;
+        flex-direction: column;
+        background: red;
+        align-items: flex-start;
+        justify-content: flex-start;
+        left: 0;
+        top: 0;
+        z-index: 99;
+        height: 100vh;
+        visibility: hidden;
+        min-height: 100%;
+        width: 100%;
+        transition: all .4s ease-in;
+    }
+    #openNav {
+        display: block;
+        position: absolute;
+    }
+    #closeNav {
+        display: block;
+        position: absolute;
+    }
+    .carousel > .slide {
+        height: 60vh;
+    }
+    .caption > h1 {
+        width: 100%;
+        font-size: 2rem;
+        font-weight: 630;
+    }
+    .caption > p {
+        width: 100%;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .caption-stat {
+        display: none;
+    }
+    .buttons {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .buttons > button {
+        padding: 10px;
+    }
+
+    .container {
+        width: 90%;
+    }
+    .stats {
+        overflow: hidden;
+    }
+    .stats h1 {
+        font-size: 1.5rem;
+        font-weight: 550;
+    }
+    .stats .customer-brands {
+        width: 100%;
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+    }
+    .about-section > .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-row {
+        flex: 100%;
+    }
+    .about-row:nth-child(1) {
+        grid-template-columns: 1fr 1fr;
+    }
+    .image-row > img {
+        height: 25vh;
+    }
+    .about-row > img {
+        height: 30vh;
+    }
+    .about-row > h4 {
+        font-size: 12px;
+        font-weight: 550;
+    }
+    .about-row > h4 span {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+    .about-row > h2 {
+        width: 100%;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .about-row > p {
+        width: 100%;
+        font-size: 15px;
+    }
+    .about-info {
+        width: 100%;
+    }
+    .about-overlay {
+        width: 80%;
+    }
+    .info-label > h3 {
+        font-size: 2.5rem;
+    }
+    .section-3 h5 {
+        font-size: 14px;
+        font-weight: 550;
+    }
+    .section-3 h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .section-3 > .container > p {
+        width: 100%;
+        font-size: 15px;
+    }
+    .container-fluid {
+        grid-template-columns: 1fr;
+    }
+    .card {
+        padding: 2rem;
+    }
+    .card-title {
+        
+    }
+    .card-title > span {
+        font-size: 15px;
+    }
+    .card-title > h2 {
+        font-size: 17px;
+    }
+    .service-container {
+        flex-wrap: wrap;
+        justify-content: baseline;
+    }
+    .overlay-container > .container > h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .overlay-container > .container > p {
+        font-size: 15px;
+        width: 100%;
+    }
+    .service-container {
+        gap: var(--gap, 2rem);
+        justify-content: center;
+    }
+    .box {
+        flex: 50%;
+    }
+    .box > span {
+        font-size: 1.5rem;
+        font-family: Raleway;
+        font-weight: 600;
+        color: var(--bg2);
+    }
+    .box > h2 {
+        font-size: 1.2rem;
+        font-family: Raleway;
+        font-weight: 600;
+    }
+    .controls {
+        display: none;
+    }
+    .section-5 h1 {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    .custom-container {
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+    .custom-card > span {
+        font-size: 16px;
+    }
+    .custom-card > h2 {
+        font-size: 1.1em;
+        font-weight: 550;
+    }
+    .testimonial-section > .container {
+        grid-template-columns: 1fr;
+    }
+    .test-row:nth-child(1) > h5 {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .test-row:nth-child(1) > h2 {
+        width: 100%;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .test-row:nth-child(1) > p {
+        font-size: 15px;
+    }
+    .FAQ-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .FAQ-section > .container > h5 {
+        font-size: 14px;
+        font-weight: 550;
+    }
+    .FAQ-section > .container > h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .FAQ > .accordion-header {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .FAQ span {
+        font-size: 12px;
+    }
+    .accordion-content {
+        font-size: 15px;
+    }
+    footer > .container {
+        flex-wrap: wrap;
+    }
+    .footer-col {
+        flex: 50%;
+    }
+}

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --color-bg: #fefefe;
+  --bg2: #e7ebed;
+  --color-primary: #f0362d;
+  --color-secondary: #4e5960;
+  --color-tertiary: #4f42f7;
+  --color-accent: #162832;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../assets/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url(../assets/Raleway/Raleway-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url(../assets/Roboto/Roboto-Regular.ttf);
+}

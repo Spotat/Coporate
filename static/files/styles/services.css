@@ -40,13 +40,18 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
-section h2 {
+#services-overview h2 {
+    font-size: 2rem;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+.service-cont h2 {
     font-size: 2rem;
     font-family: Montserrat;
     font-weight: 500;
     color: --color-primary;
 }
-section p {
+.service-cont section p {
     font-size: 17px;
     font-family: Roboto;
     margin-top: 20px;
@@ -57,18 +62,18 @@ section > p {
     margin: auto;
     color: var(--color-secondary);
 }
-section ul {
+.service-cont section ul {
     list-style: none;
     padding: 0;
     margin-bottom: 30px;
 }
-section ul li {
+.service-cont section ul li {
     margin: 10px 0;
     font-family: Raleway;
     font-weight: 500;
     color: var(--color-bg);
 }
-section a {
+.service-cont section a {
     padding: 10px 20px;
     background: var(--color-primary);
     color: var(--color-bg);
@@ -78,6 +83,10 @@ section a {
     margin-top: 20px;
 }
 .container {
+    width: 80%;
+    margin: auto;
+}
+.service-cont > section > .container {
     width: 100%;
     height: 100%;
     gap: 3rem;
@@ -146,7 +155,7 @@ section img {
     section {
         margin-top: 0;
     }
-    section img {
+    .service-cont > section img {
         height: 70vh;
         min-height: 350px;
     }

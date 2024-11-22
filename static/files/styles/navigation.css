@@ -75,6 +75,197 @@ header {
     display: none;
 }
 
+/* testimonial section */
+.testimonial-section {
+    width: 100%;
+    margin-top: 5rem;
+}
+.testimonial-section > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+.test-row:nth-child(1) > h5 {
+    font-size: 15px;
+    font-family: Raleway;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+.test-row:nth-child(1) > h2 {
+    width: 70%;
+    font-size: 5vh;
+    font-family: Raleway;
+    font-weight: 680;
+    line-height: normal;
+    margin-top: 5px;
+    color: var(--color-tertiary);
+}
+.test-row:nth-child(1) > p {
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+.profile-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.profile:not(:nth-child(1)) {
+    margin-left: -20px;
+}
+.profile > img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+/* test-row 2 */
+.test-row:nth-child(2) {
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: column;
+    padding: 0 10px;
+}
+.test-slider {
+    display: flex;
+    transition: all .4s ease-in-out;
+    gap: var(--gap, 1rem);
+}
+.testimonial {
+    padding: 20px;
+    width: 100%;
+    min-width: 100%;
+    box-shadow: 0 8px 10px rgba(0,0,0,0.2);
+}
+.testimonial > span {
+    font-size: 2rem;
+    color: var(--color-tertiary);
+}
+.testimonial > p {
+    font-size: 15px;
+    font-family: Montserrat;
+    font-weight: 550;
+    margin-top: 20px;
+}
+.slider-profile {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: var(--gap, 20px);
+}
+.slider-profile > img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+.profile-body > h2 {
+    font-size: 16px;
+    font-family: Raleway;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+.profile-body > p {
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+.test-controls {
+    margin-top: 2rem;
+    align-self: flex-end;
+    display: flex;
+    gap: var(--gap, 15px);
+}
+.test-controls > button {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 50%;
+    background-color: #989898c7;
+    border: none;
+    color: var(--color-bg);
+}
+.test-controls > button:nth-child(1) {
+    background: var(--color-tertiary);
+}
+/* FAQ section */
+.FAQ-section {
+    margin-top: 5rem;
+}
+.FAQ-section > .container {
+
+}
+.FAQ-section > .container > h5 {
+    font-size: 15px;
+    font-family: Raleway;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 5px;
+    text-align: center;
+}
+.FAQ-section > .container > h1 {
+    font-size: 5vh;
+    font-family: Raleway;
+    font-weight: 680;
+    line-height: normal;
+    text-align: center;
+}
+.FAQ-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+.FAQ-row:nth-child(1) {
+    /* display: grid; */
+}
+.FAQ {
+    padding: 10px 0;
+    border-bottom: 1px solid #33333356;
+}
+.FAQ > .accordion-header {
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    font-weight: 650;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    border: none;
+    transition: .4s ease-out;
+}
+.accordion-header:hover, .accordion-header:active {
+    background: #4e42f752;
+}
+.FAQ span {
+    font-size: 15px;
+}
+.accordion-content {
+    padding: 0px 18px;
+    height: 100%;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    overflow: hidden;
+    background: #e7ebed;
+    transition: all .4s ease-out;
+    max-height: 0;
+}
+.accordion-content > p {
+    margin-bottom: 20px;
+}
+.FAQ-row:nth-child(2) > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 /* Footer section */
 footer {
     margin-top: 5rem;
@@ -114,13 +305,15 @@ footer > .container {
     margin-left: 5px;
     color: var(--color-primary);
 }
-
 @media (max-width: 560px) {
     header {
         padding: 15px;
     }
     .logo {
         font-size: 1rem;
+    }
+    .container {
+        width: 100%;
     }
     .navigation {
         position: absolute;
@@ -144,6 +337,45 @@ footer > .container {
     #closeNav {
         display: block;
         position: absolute;
+    }
+    .testimonial-section > .container {
+        grid-template-columns: 1fr;
+    }
+    .test-row:nth-child(1) > h5 {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .test-row:nth-child(1) > h2 {
+        width: 100%;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .test-row:nth-child(1) > p {
+        font-size: 15px;
+    }
+    .FAQ-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .FAQ-section > .container > h5 {
+        font-size: 14px;
+        font-weight: 550;
+    }
+    .FAQ-section > .container > h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .FAQ > .accordion-header {
+        font-size: 16px;
+        font-weight: 500;
+        text-align: start;
+        text-wrap: wrap;
+    }
+    .FAQ span {
+        font-size: 12px;
+    }
+    .accordion-content {
+        font-size: 15px;
     }
     footer > .container {
         flex-wrap: wrap;

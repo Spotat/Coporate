@@ -127,6 +127,7 @@ section img {
     }
     .container {
         padding: 20px;
+        backdrop-filter: blur(1px);
     }
     .container h2 {
         font-size: 1.2em;
@@ -146,6 +147,13 @@ section img {
         margin-top: 0;
     }
     section img {
-        height: 50vh;
+        height: 70vh;
+        min-height: 250px;
+    }
+    .row > ul {
+        margin-top: 20px;
+    }
+    .row > ul li {
+        color: var(--bg2);
     }
 }

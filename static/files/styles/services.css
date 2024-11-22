@@ -121,7 +121,7 @@ section img {
         font-size: 1.6rem;
     }
     .service-cont {
-        width: 100%;
+        width: 90%;
         grid-template-columns: 1fr;
         gap: 10px;
     }
@@ -148,7 +148,7 @@ section img {
     }
     section img {
         height: 70vh;
-        min-height: 250px;
+        min-height: 350px;
     }
     .row > ul {
         margin-top: 20px;

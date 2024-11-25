@@ -1,80 +1,3 @@
-
-header {
-    width: 100%;
-    background: var(--color-bg);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 5rem;
-    position: relative;
-}
-.logo {
-    font-family: Raleway;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    font-weight: 670;
-    color: var(--color-accent);
-}
-.navigation {
-    display: flex;
-    align-items: center;
-    gap: var(--gap, 20px);
-    position: relative;
-}
-.navigation > a {
-    text-decoration: none;
-    padding: 10px;
-    color: var(--color-secondary);
-    font-family: Raleway;
-    font-size: 15px;
-    font-weight: 600;
-    text-wrap: nowrap;
-    transition: .4s ease;
-}
-.navigation > a:hover, .navigation > a.active {
-    color: var(--color-primary);
-}
-#contactBtn {
-    margin-left: 30px;
-    background: red;
-    padding: 10px 20px;
-    border-radius: 2px;
-    border: none;
-    color: var(--color-bg);
-    transition: all .4s ease-in-out;
-}
-#contactBtn:hover {
-    background: transparent;
-    padding: 0%;
-    color: var(--color-primary);
-}
-#contactBtn:hover > i {
-    padding: 10px;
-    background-color: #4e42f759;
-    transition: all .4s ease-in-out;
-}
-#contactBtn > i {
-    font-size: 16px;
-    color: transparent;
-    -webkit-text-stroke: 1.1px white; 
-    margin-right: 10px;
-    border-radius: 50%;
-}
-#openNav {
-    font-size: 18px;
-    top: 1rem;
-    right: 2rem;
-    display: none;
-    color: var(--color-primary);
-}
-#closeNav {
-    font-size: 17px;
-    top: 2rem;
-    right: 2rem;
-    display: none;
-}
-
 /* testimonial section */
 .testimonial-section {
     width: 100%;
@@ -306,29 +229,8 @@ footer > .container {
     color: var(--color-primary);
 }
 @media (max-width: 560px) {
-    header {
-        padding: 15px;
-    }
-    .logo {
-        font-size: 1rem;
-    }
     .container {
         width: 100%;
-    }
-    .navigation {
-        position: absolute;
-        flex-direction: column;
-        background: red;
-        align-items: flex-start;
-        justify-content: flex-start;
-        left: 0;
-        top: 0;
-        z-index: 99;
-        height: 100vh;
-        visibility: hidden;
-        min-height: 100%;
-        width: 100%;
-        transition: all .4s ease-in;
     }
     #openNav {
         display: block;
@@ -352,6 +254,9 @@ footer > .container {
     }
     .test-row:nth-child(1) > p {
         font-size: 15px;
+    }
+    .profile-body > p {
+        text-wrap: nowrap;
     }
     .FAQ-container {
         display: flex;

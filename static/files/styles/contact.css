@@ -14,32 +14,6 @@ p, a  {
 h1, h2, h3, h4, h5, h6,  button {
     font-family: Raleway;
 }
-.banner {
-    width: 100%;
-    position: relative;
-    text-align: center;
-    color: #fff;
-}
-.banner img {
-    width: 100%;
-    height: auto;
-    min-height: 30vh;
-    filter: brightness(80%);
-}
-.banner-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-.banner-content > h1 {
-    font-size: 3em;
-    font-family: Raleway;
-    font-weight: 600;
-}
-.banner-content > p {
-    font-family: Montserrat;
-}
 /* contact section */
 .contact {
     width: 100%;
@@ -96,6 +70,8 @@ form > input[type="submit"] {
     font-size: 16px;
     color: var(--color-text);
     margin-top: 20px;
+    font-family: Raleway;
+    font-weight: 570;
 }
 .icon-container {
     width: 100%;
@@ -154,24 +130,23 @@ icon-body > p {
     font-size: 17px;
 } 
 .contact-row > .socials .social {
-    /* font-size: 16px; */
+    font-size: 16px;
     text-wrap: nowrap;
+    text-decoration: none;
+    color: var(--color-accent);
 }
 
 @media (max-width: 578px) {
-    .card {
-        padding: 15px;
-        gap: var(--gap, 5px);
+    section > .container {
+        width: 90%;
     }
     .contact {
         margin-bottom: 5rem;
     }
-    .card-container > .container {
-        grid-template-columns: 1fr;
-        gap: 2em;
-    }
     .contact > .container {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: var(--gap, 2em);
     }   
     .contact-row > form {
         gap: 1.5em;
@@ -195,5 +170,8 @@ icon-body > p {
     .contact-row > h3 {
         font-size: 1rem;
         color: var(--color-primary);
+    }
+    footer > .container {
+        width: 90%;
     }
 }

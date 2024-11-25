@@ -7,31 +7,46 @@
     <link rel="stylesheet" href="../static/files/styles/services.css">
     <link rel="stylesheet" href="../static/files/styles/navigation.css">
     <link rel="stylesheet" href="../static/files/styles/root.css">
+    <link rel="stylesheet" href="../static/files/styles/slider.css">
     <link rel="stylesheet" href="../static/files/assets/fontawesome-free-6.5.2-web/css/all.css">
     <script src="../static/files/scripts/script.js"></script>
 </head>
 <body>
-    <header>
-        <div class="logo">Eljotech</div>
-        <div class="navigation" id="sideNav">
-            <a href="#" class="active">Home</a>
-            <a href="#">About us</a>
-            <a href="#">Services</a>
-            <a href="#">Products</a>
-            <a href="#">Solutions</a>
-            <a href="#">Resources</a>
-            <a href="#">Support</a>
-            <a href="#" id="contactBtn"><i class="fa fa-phone"></i> Contact us</a>
-            <span id="closeNav" onclick="closeNav()">&times</span>
-        </div>
-        <span id="openNav" onclick="openNav()">&#9776</span>
-    </header>
-    <div class="banner">
-        <img src="../static/files/assets/zhen-yao-2bG6fFQDLLQ-unsplash.jpg" alt="banner-image">
-        <div class="banner-content">
-            <h1>Our security services</h1>
-            <p>Comprehensive security solutions for all your needs</p>
-        </div>
+    <div class="hero">
+        <video src="../static/files/assets/7255101-uhd_4096_2160_30fps.mp4" autoplay preload="auto" muted></video>
+        <img src="../static/files/assets/pexels-pixabay-274886.jpg" alt="">
+        <section class="overlay">
+            <header>
+                <div class="logo">
+                    <h1>Eljotech</h1>
+                    <h6>Solutions</h6>
+                </div>
+                <div class="navigation">
+                    <a href="#">Home</a>
+                    <a href="#">About us</a> 
+                    <a href="#">Services</a> 
+                    <a href="#">Contact us</a>
+                    <span id="closeNav" onclick="closeNav()">&times</span>
+                </div>
+                <span class="fa fa-bars" id="openNav" onclick="openNav()"></span>
+            </header>
+            <div class="carousel">
+                <div class="slider">
+                    <h1>Unique and powerful security systems</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit aspernatur eaque eius, doloribus minima possim.</p>
+                    <div class="buttons">
+                        <button>Learn more <i class="fa fa-arrow-right-long"></i></button>
+                    </div>
+                    <div class="caption container">
+                        <div class="caption-stat">
+                            <h2>20,000+</h2>
+                            <h4>Intergrated systems</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     <section id="services-overview">
         <h2>Our services</h2>

@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+p, a  {
+    font-family: Merriweather-Regular;
+}
+h1, h2, h3, h4, h5, h6,  button {
+    font-family: Raleway;
+}
+.banner {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+.banner img {
+    width: 100%;
+    height: auto;
+    min-height: 30vh;
+    filter: brightness(80%);
+}
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.banner-content > h1 {
+    font-size: 3em;
+    font-family: Raleway;
+    font-weight: 600;
+}
+.banner-content > p {
+    font-family: Montserrat;
+}
+/* contact section */
+.contact {
+    width: 100%;
+    margin-bottom: 10em;
+    margin-top: 5em;
+}
+.contact > .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    align-items: center;
+}
+.contact-row > form {
+    width: 100%;
+    display: grid;
+    gap: 2em;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+form > input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Raleway;
+    color: var(--color-text);
+    border-radius: 5px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+    border: 1px solid rgba(128, 128, 128, 0.281);
+}
+form > input[type="submit"] {
+    padding: 10px 15px;
+    font-family: Raleway;
+    font-size: 16px;
+    color: var(--color-bg);
+    border-radius: 30px;
+    background: var(--color-accent);
+    width: fit-content;
+    border: none;
+}
+.contact-row > h4 {
+    color: var(--color-secondary);
+    font-size: 14px;
+    line-height: normal;
+}
+.contact-row > h2 {
+    font-size: 2em;
+    margin-top: 5px;
+    font-weight: 650;
+    color: var(--color-primary);
+}
+.contact-row > p {
+    font-size: 16px;
+    color: var(--color-text);
+    margin-top: 20px;
+}
+.icon-container {
+    width: 100%;
+    display: flex;
+    gap: var(--gap, 2em);
+    margin-top: 20px;
+}
+.icon-col {
+    display: flex;
+    align-items: center;
+    gap: var(--gap, 10px);
+}
+.icon-col > span {
+    font-size: 18px;
+    padding: 20px;
+    -webkit-text-stroke: 1px var(--color-bg);
+    color: transparent;
+    border-radius: 50%;
+    background: #ffa500;
+}
+.icon-col:nth-child(2) > span {
+    background: var(--color-secondary);
+}
+icon-body {
+
+}
+icon-body > h2 {
+    font-size: 16px;
+    color: var(--color-primary);
+}
+icon-body > p {
+    font-size: 14px;
+    color: var(--color-text);
+    margin-top: 5px;
+}
+.contact-row > hr  {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.contact-row > h3 {
+    font-size: 1.2rem;
+    color: var(--color-primary);
+}
+.contact-row > .socials {
+    display: flex;
+    gap: var(--gap, 20px);
+    align-items: center;
+    margin-top: 20px;
+}
+.contact-row > .socials .social {
+
+}
+.contact-row > .socials .social span {
+    color: var(--color-accent);
+    margin-right: 5px;
+    font-size: 17px;
+} 
+.contact-row > .socials .social {
+    /* font-size: 16px; */
+    text-wrap: nowrap;
+}
+
+@media (max-width: 578px) {
+    .card {
+        padding: 15px;
+        gap: var(--gap, 5px);
+    }
+    .contact {
+        margin-bottom: 5rem;
+    }
+    .card-container > .container {
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+    .contact > .container {
+        grid-template-columns: 1fr;
+    }   
+    .contact-row > form {
+        gap: 1.5em;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+    .icon-container {
+        flex-direction: column;
+    }
+    .contact-row > .socials {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact-row > h4 {
+        font-size: 12px;
+    }
+    .contact-row > h2 {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    .contact-row > h3 {
+        font-size: 1rem;
+        color: var(--color-primary);
+    }
+}

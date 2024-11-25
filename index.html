@@ -6,38 +6,36 @@
     <title>Home</title>
     <link rel="stylesheet" href="./static/files/styles/style.css">
     <link rel="stylesheet" href="./static/files/styles/mobile.css">
-    <!-- <link rel="stylesheet" href="./static/files/styles/navigation.css"> -->
+    <link rel="stylesheet" href="./static/files/styles/slider.css">
     <link rel="stylesheet" href="./static/files/assets/fontawesome-free-6.5.2-web/css/all.css">
     <script src="./static/files/scripts/script.js"></script>
 </head>
 <body>
-    <header>
-        <div class="logo">Eljotech</div>
-        <div class="navigation" id="sideNav">
-            <a href="#" class="active">Home</a>
-            <a href="#">About us</a>
-            <a href="./templates/services.html">Services</a>
-            <a href="#">Products</a>
-            <a href="#">Solutions</a>
-            <a href="#">Resources</a>
-            <a href="#">Support</a>
-            <a href="#" id="contactBtn"><i class="fa fa-phone"></i> Contact us</a>
-            <span id="closeNav" onclick="closeNav()">&times</span>
-        </div>
-        <span id="openNav" onclick="openNav()">&#9776</span>
-    </header>
-    <div class="slider-container">
-        <div class="carousel slider">
-            <div class="slide">
-                <img src="./static/files/assets/cctv-2596537.jpg" alt="">
-                <div class="overlay">
+    <div class="hero">
+        <video src="../static/files/assets/7255101-uhd_4096_2160_30fps.mp4" autoplay preload="auto" muted></video>
+        <section class="overlay">
+            <header>
+                <div class="logo">
+                    <h1>Eljotech</h1>
+                    <h6>Solutions</h6>
+                </div>
+                <div class="navigation">
+                    <a href="#">Home</a>
+                    <a href="#">About us</a> 
+                    <a href="#">Services</a> 
+                    <a href="#">Contact us</a>
+                    <span id="closeNav" onclick="closeNav()">&times</span>
+                </div>
+                <span class="fa fa-bars" id="openNav" onclick="openNav()"></span>
+            </header>
+            <div class="carousel">
+                <div class="slider">
+                    <h1>Unique and powerful security systems</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit aspernatur eaque eius, doloribus minima possim.</p>
+                    <div class="buttons">
+                        <button>Learn more <i class="fa fa-arrow-right-long"></i></button>
+                    </div>
                     <div class="caption container">
-                        <h1>Unique and powerful security systems</h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit aspernatur eaque eius, doloribus minima possim.</p>
-                        <div class="buttons">
-                            <button>Learn more <i class="fa fa-arrow-right-long"></i></button>
-                            <button id="playButton"><span class="fa fa-play"></span> Watch video</button>
-                        </div>
                         <div class="caption-stat">
                             <h2>20,000+</h2>
                             <h4>Intergrated systems</h4>
@@ -46,57 +44,8 @@
                     </div>
                 </div>
             </div>
-            <div class="slide">
-                <img src="./static/files/assets/cctv-surveillance-camera-7267551_1920.jpg" alt="">
-                <div class="overlay">
-                    <div class="caption container">
-                        <h1>Unique and powerful security systems</h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit aspernatur eaque eius, doloribus minima possim.</p>
-                        <div class="buttons">
-                            <button>Learn more <i class="fa fa-arrow-right-long"></i></button>
-                            <button id="playButton"><span class="fa fa-play"></span> Watch video</button>
-                        </div>
-                        <div class="caption-stat">
-                            <h2>20,000+</h2>
-                            <h4>Intergrated systems</h4>
-                            <p>Lorem, ipsum dolor sit amet consectetur.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
-                <img src="./static/files/assets/security-camera-5642120.jpg" alt="">
-                <div class="overlay">
-                    <div class="caption container">
-                        <h1>Unique and powerful security systems</h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit aspernatur eaque eius, doloribus minima possim.</p>
-                        <div class="buttons">
-                            <button>Learn more <i class="fa fa-arrow-right-long"></i></button>
-                            <button id="playButton"><span class="fa fa-play"></span> Watch video</button>
-                        </div>
-                        <div class="caption-stat">
-                            <h2>20,000+</h2>
-                            <h4>Intergrated systems</h4>
-                            <p>Lorem, ipsum dolor sit amet consectetur.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
     </div>
-    <!-- <section class="stats">
-        <div class="container">
-            <h1>Trusted by 200+ happy customers</h1>
-            <div class="customer-brands brand-slider">
-                <div class="brand"><img src="./static/files/assets/Bismak-maritime.jpg" alt=""></div>
-                <div class="brand"><img src="./static/files/assets/Brava-food-industries.png" alt=""></div>
-                <div class="brand"><img src="./static/files/assets/Cobho.jpg" alt=""></div>
-                <div class="brand"><img src="./static/files/assets/Crown-auto-parts.jpg" alt=""></div>
-                <div class="brand"><img src="./static/files/assets/petrocity-logo.jpg" alt=""></div>
-                <div class="brand"><img src="./static/files/assets/The-munipal-group.jpg" alt=""></div>
-            </div>
-        </div>
-    </section> -->
     <section class="about-section">
         <div class="container">
             <div class="about-row">
@@ -379,9 +328,9 @@
             <div class="footer-col">
                 <h2>Our services</h2>
                 <a href="/index.html">Home</a>
-                <a href="#">About us</a>
-                <a href="#">Services</a>
-                <a href="#">Features</a>
+                <a href="./templates/about.html">About us</a>
+                <a href="./templates/services.html">Services</a>
+                <a href="./templates/contact.html">Features</a>
             </div>
             <div class="footer-col">
                 <h2>Quick link</h2>

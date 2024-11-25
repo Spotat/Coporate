@@ -1,25 +1,4 @@
 @media (max-width: 600px) {
-    header {
-        padding: 15px;
-    }
-    .logo {
-        font-size: 1rem;
-    }
-    .navigation {
-        position: absolute;
-        flex-direction: column;
-        background: red;
-        align-items: flex-start;
-        justify-content: flex-start;
-        left: 0;
-        top: 0;
-        z-index: 99;
-        height: 100vh;
-        visibility: hidden;
-        min-height: 100%;
-        width: 100%;
-        transition: all .4s ease-in;
-    }
     #openNav {
         display: block;
         position: absolute;

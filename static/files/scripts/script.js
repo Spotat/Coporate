@@ -1,11 +1,16 @@
 function openNav() {
-    document.getElementById("sideNav").style.height = "100%"
+    document.getElementById("sideNav").style.height = "40vh"
+    document.getElementById("sideNav").style.minHeight = "17vh"
+    document.getElementById("sideNav").style.right = "0"
+    document.getElementById("sideNav").style.width = "80%"
     document.getElementById("sideNav").style.opacity = "1"
     document.getElementById("sideNav").style.zIndex = "99"
     document.getElementById("sideNav").style.visibility = "visible"
 }
 function closeNav() {
     document.getElementById("sideNav").style.height = "0%"
+    document.getElementById("sideNav").style.minHeight = "0 "
+    document.getElementById("sideNav").style.width = "0"
     document.getElementById("sideNav").style.opacity = "0"
     document.getElementById("sideNav").style.zIndex = "-99"
     document.getElementById("sideNav").style.visibility = "hidden"

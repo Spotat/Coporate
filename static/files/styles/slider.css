@@ -35,13 +35,13 @@
     display: flex;
     align-items: center;
     margin: auto;
-    position: relative;
+    /* position: relative; */
     justify-content: space-between;
 }
 header #openNav, #closeNav {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 2em;
+    right: 1.5em;
     font-size: 18px;
     color: white;
     cursor: pointer;
@@ -199,20 +199,33 @@ header > .navigation  {
         display: none;
     }
     .navigation {
-        top: 4em;
-        left: 0;
+        top: 0;
+        right: 0;
         position: absolute;
         display: flex;
         flex-direction: column;
         width: 100%;
         padding: 1em;
-        height: 60vh;
+        height: 100%;
+        min-height: 17em;
         align-items: flex-start;
         justify-content: flex-start;
         z-index: 99;
+        gap: var(--gap, 1em);
         visibility: hidden;
         transition: all .4s ease-in;
-        background-color: rgba(255, 255, 255, 0.096);
+        border-radius: 31% 69% 33% 67% / 53% 27% 73% 47%;
+        background-color: rgba(255, 255, 255, 0.877);
+    }
+    .navigation > a {
+        color: black;
+    }
+    #closeNav {
+        margin-left: 1em;
+        color: black;
+        padding: 15px;
+        border-radius: 31% 69% 33% 67% / 53% 27% 73% 47%;
+        background: #96969671;
     }
     .carousel {
         margin-top: 17em;
